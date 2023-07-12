@@ -15,6 +15,24 @@
       <version>3.8.1</version>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>nexus</id>
+      <url>http://localhost:8081/repository/gtb-snapshots/</url>
+      <snapshots><enabled>true</enabled></snapshots>
+      <release><enabled>true</enabled></release>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>nexus</id>
+      <url>http://localhost:8081/repository/gtb-release/</url>
+      <snapshots><enabled>true</enabled></snapshots>
+      <release><enabled>true</enabled></release>
+    </pluginRepository>
+  </pluginRepositories>
+  
   <build>
     <finalName>01-maven-web-app</finalName>
     <plugins>
